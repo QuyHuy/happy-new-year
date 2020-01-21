@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firewall</title>
+    <style>
+        .image{
+            position: absolute;
+            top: 400px;
+        }
+    </style>
+</head>
+<body onclick='playMusic()'>
+    <audio id="background-music">  
+        <source src="HappyNewYear-ABBA_3rkqc.mp3" type="audio/mpeg">  
+    </audio>   
+</body>
+<script src="script.js"></script>
+<script type="text/javascript">
+    var backgroundMusic = document.getElementById("background-music");
+    backgroundMusic.autoplay = true;
+    backgroundMusic.loop = true;
+    backgroundMusic.controls = false;
+    function playMusic() {
+        backgroundMusic.play();       
+    }
+</script>
+</html>
